@@ -1,0 +1,1571 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+new file mode 100644
+--- /dev/null	(date 1609760905590)
++++ b/pom.xml	(date 1609760905590)
+@@ -0,0 +1,76 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>com.example</groupId>
++    <artifactId>demo</artifactId>
++    <version>1</version>
++    <name>demo</name>
++    <packaging>war</packaging>
++
++    <properties>
++        <maven.compiler.target>1.8</maven.compiler.target>
++        <maven.compiler.source>1.8</maven.compiler.source>
++        <junit.version>5.7.0</junit.version>
++    </properties>
++
++    <dependencies>
++        <dependency>
++            <groupId>javax.servlet</groupId>
++            <artifactId>javax.servlet-api</artifactId>
++            <version>4.0.1</version>
++            <scope>provided</scope>
++        </dependency>
++        <dependency>
++            <groupId>org.junit.jupiter</groupId>
++            <artifactId>junit-jupiter-api</artifactId>
++            <version>${junit.version}</version>
++            <scope>test</scope>
++        </dependency>
++        <dependency>
++            <groupId>org.junit.jupiter</groupId>
++            <artifactId>junit-jupiter-engine</artifactId>
++            <version>${junit.version}</version>
++            <scope>test</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>mysql</groupId>
++            <artifactId>mysql-connector-java</artifactId>
++            <version>8.0.22</version>
++        </dependency>
++        <dependency>
++            <groupId>javax.servlet.jsp.jstl</groupId>
++            <artifactId>jstl-api</artifactId>
++            <version>1.2</version>
++        </dependency>
++        <dependency>
++            <groupId>org.glassfish.web</groupId>
++            <artifactId>javax.servlet.jsp.jstl</artifactId>
++            <version>1.2.4</version>
++        </dependency>
++        <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
++        <dependency>
++            <groupId>commons-codec</groupId>
++            <artifactId>commons-codec</artifactId>
++            <version>1.15</version>
++        </dependency>
++        <dependency>
++            <groupId>redis.clients</groupId>
++            <artifactId>jedis</artifactId>
++            <version>3.4.1</version>
++        </dependency>
++    </dependencies>
++
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-war-plugin</artifactId>
++                <version>3.3.0</version>
++            </plugin>
++        </plugins>
++    </build>
++</project>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml b/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml
+new file mode 100644
+--- /dev/null	(date 1609232828859)
++++ b/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml	(date 1609232828859)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.junit.jupiter:junit-jupiter-api:5.7.0">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__commons_codec_commons_codec_1_15.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml b/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml
+new file mode 100644
+--- /dev/null	(date 1609233785748)
++++ b/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml	(date 1609233785748)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: commons-codec:commons-codec:1.15">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.15/commons-codec-1.15.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.15/commons-codec-1.15-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.15/commons-codec-1.15-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml b/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml
+new file mode 100644
+--- /dev/null	(date 1609232828863)
++++ b/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml	(date 1609232828863)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.junit.jupiter:junit-jupiter-engine:5.7.0">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml b/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml
+new file mode 100644
+--- /dev/null	(date 1609233785752)
++++ b/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml	(date 1609233785752)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: javax.servlet.jsp:jsp-api:2.1">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml b/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml
+new file mode 100644
+--- /dev/null	(date 1609232828867)
++++ b/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml	(date 1609232828867)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.junit.platform:junit-platform-commons:1.7.0">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__javax_servlet_jsp_jstl_jstl_api_1_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__javax_servlet_jsp_jstl_jstl_api_1_2.xml b/.idea/libraries/Maven__javax_servlet_jsp_jstl_jstl_api_1_2.xml
+new file mode 100644
+--- /dev/null	(date 1609233785752)
++++ b/.idea/libraries/Maven__javax_servlet_jsp_jstl_jstl_api_1_2.xml	(date 1609233785752)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: javax.servlet.jsp.jstl:jstl-api:1.2">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jsp/jstl/jstl-api/1.2/jstl-api-1.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jsp/jstl/jstl-api/1.2/jstl-api-1.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jsp/jstl/jstl-api/1.2/jstl-api-1.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml b/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml
+new file mode 100644
+--- /dev/null	(date 1609232828871)
++++ b/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml	(date 1609232828871)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.junit.platform:junit-platform-engine:1.7.0">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml b/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml
+new file mode 100644
+--- /dev/null	(date 1609233785756)
++++ b/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml	(date 1609233785756)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: javax.servlet:servlet-api:2.5">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml b/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml
+new file mode 100644
+--- /dev/null	(date 1609232828875)
++++ b/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml	(date 1609232828875)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.opentest4j:opentest4j:1.2.0">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__mysql_mysql_connector_java_8_0_22.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_22.xml b/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_22.xml
+new file mode 100644
+--- /dev/null	(date 1609233785760)
++++ b/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_22.xml	(date 1609233785760)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: mysql:mysql-connector-java:8.0.22">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.22/mysql-connector-java-8.0.22.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.22/mysql-connector-java-8.0.22-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.22/mysql-connector-java-8.0.22-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_glassfish_web_javax_servlet_jsp_jstl_1_2_4.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_glassfish_web_javax_servlet_jsp_jstl_1_2_4.xml b/.idea/libraries/Maven__org_glassfish_web_javax_servlet_jsp_jstl_1_2_4.xml
+new file mode 100644
+--- /dev/null	(date 1609233785764)
++++ b/.idea/libraries/Maven__org_glassfish_web_javax_servlet_jsp_jstl_1_2_4.xml	(date 1609233785764)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.glassfish.web:javax.servlet.jsp.jstl:1.2.4">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/web/javax.servlet.jsp.jstl/1.2.4/javax.servlet.jsp.jstl-1.2.4.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/web/javax.servlet.jsp.jstl/1.2.4/javax.servlet.jsp.jstl-1.2.4-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/web/javax.servlet.jsp.jstl/1.2.4/javax.servlet.jsp.jstl-1.2.4-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: demo.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/demo.iml b/demo.iml
+new file mode 100644
+--- /dev/null	(date 1609761126845)
++++ b/demo.iml	(date 1609761126845)
+@@ -0,0 +1,49 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
++  <component name="FacetManager">
++    <facet type="web" name="Web">
++      <configuration>
++        <descriptors>
++          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
++        </descriptors>
++        <webroots>
++          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
++        </webroots>
++        <sourceRoots>
++          <root url="file://$MODULE_DIR$/src/main/java" />
++          <root url="file://$MODULE_DIR$/src/main/resources" />
++        </sourceRoots>
++      </configuration>
++    </facet>
++  </component>
++  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
++    <output url="file://$MODULE_DIR$/target/classes" />
++    <output-test url="file://$MODULE_DIR$/target/test-classes" />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
++      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
++      <excludeFolder url="file://$MODULE_DIR$/target" />
++    </content>
++    <orderEntry type="jdk" jdkName="11" jdkType="JavaSDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:4.0.1" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-api:5.7.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.apiguardian:apiguardian-api:1.1.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.opentest4j:opentest4j:1.2.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-commons:1.7.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-engine:5.7.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.7.0" level="project" />
++    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.22" level="project" />
++    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.11.4" level="project" />
++    <orderEntry type="library" name="Maven: javax.servlet.jsp.jstl:jstl-api:1.2" level="project" />
++    <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
++    <orderEntry type="library" name="Maven: javax.servlet.jsp:jsp-api:2.1" level="project" />
++    <orderEntry type="library" name="Maven: org.glassfish.web:javax.servlet.jsp.jstl:1.2.4" level="project" />
++    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.15" level="project" />
++    <orderEntry type="library" name="Maven: redis.clients:jedis:3.4.1" level="project" />
++    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.30" level="project" />
++    <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.6.2" level="project" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+new file mode 100644
+--- /dev/null	(date 1609232828883)
++++ b/.idea/compiler.xml	(date 1609232828883)
+@@ -0,0 +1,16 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <annotationProcessing>
++      <profile name="Maven default annotation processors profile" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++        <module name="demo" />
++      </profile>
++    </annotationProcessing>
++    <bytecodeTargetLevel>
++      <module name="demo" target="1.8" />
++    </bytecodeTargetLevel>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1609232274648)
++++ b/.idea/modules.xml	(date 1609232274648)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/artifacts/demo_war.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/artifacts/demo_war.xml b/.idea/artifacts/demo_war.xml
+new file mode 100644
+--- /dev/null	(date 1609232828891)
++++ b/.idea/artifacts/demo_war.xml	(date 1609232828891)
+@@ -0,0 +1,14 @@
++<component name="ArtifactManager">
++  <artifact type="war" name="demo:war">
++    <output-path>$PROJECT_DIR$/target</output-path>
++    <properties id="maven-jee-properties">
++      <options>
++        <module>demo</module>
++        <packaging>war</packaging>
++      </options>
++    </properties>
++    <root id="archive" name="demo-1.war">
++      <element id="artifact" artifact-name="demo:war exploded" />
++    </root>
++  </artifact>
++</component>
+\ No newline at end of file
+Index: .idea/artifacts/demo_war_exploded.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/artifacts/demo_war_exploded.xml b/.idea/artifacts/demo_war_exploded.xml
+new file mode 100644
+--- /dev/null	(date 1609761126869)
++++ b/.idea/artifacts/demo_war_exploded.xml	(date 1609761126869)
+@@ -0,0 +1,35 @@
++<component name="ArtifactManager">
++  <artifact type="exploded-war" name="demo:war exploded">
++    <output-path>$PROJECT_DIR$/target/demo-1</output-path>
++    <properties id="maven-jee-properties">
++      <options>
++        <exploded>true</exploded>
++        <module>demo</module>
++        <packaging>war</packaging>
++      </options>
++    </properties>
++    <root id="root">
++      <element id="directory" name="WEB-INF">
++        <element id="directory" name="classes">
++          <element id="module-output" name="demo" />
++        </element>
++        <element id="directory" name="lib">
++          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.22" />
++          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.11.4" />
++          <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:jstl-api:1.2" />
++          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
++          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.1" />
++          <element id="library" level="project" name="Maven: org.glassfish.web:javax.servlet.jsp.jstl:1.2.4" />
++          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.15" />
++          <element id="library" level="project" name="Maven: redis.clients:jedis:3.4.1" />
++          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.30" />
++          <element id="library" level="project" name="Maven: org.apache.commons:commons-pool2:2.6.2" />
++        </element>
++      </element>
++      <element id="directory" name="META-INF">
++        <element id="file-copy" path="$PROJECT_DIR$/target/demo-1/META-INF/MANIFEST.MF" />
++      </element>
++      <element id="javaee-facet-resources" facet="demo/web/Web" />
++    </root>
++  </artifact>
++</component>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1609232828883)
++++ b/.idea/misc.xml	(date 1609232828883)
+@@ -0,0 +1,16 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="FrameworkDetectionExcludesConfiguration">
++    <file type="web" url="file://$PROJECT_DIR$" />
++  </component>
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/jarRepositories.xml b/.idea/jarRepositories.xml
+new file mode 100644
+--- /dev/null	(date 1609232828899)
++++ b/.idea/jarRepositories.xml	(date 1609232828899)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Central Repository" />
++      <option name="url" value="https://repo.maven.apache.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+Index: src/main/webapp/index.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/webapp/index.jsp b/src/main/webapp/index.jsp
+new file mode 100644
+--- /dev/null	(date 1609299182043)
++++ b/src/main/webapp/index.jsp	(date 1609299182043)
+@@ -0,0 +1,17 @@
++<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
++<!DOCTYPE html>
++<html>
++<head>
++    <title>游戏查询</title>
++</head>
++<body>
++<form action="find.do" method="post">
++    游戏名称<input name="gameName"/><br>
++    游戏类型<input name="gameType"/><br>
++    发行公司<input name="gameCompany"/><br>
++    发行年份<input name="gameYear"/><br>
++     <input type="submit" value="Find"/>
++    <a href="game.jsp">添加</a>
++</form>
++</body>
++</html>
+\ No newline at end of file
+Index: .idea/dataSources.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources.xml b/.idea/dataSources.xml
+new file mode 100644
+--- /dev/null	(date 1609235889407)
++++ b/.idea/dataSources.xml	(date 1609235889407)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
++    <data-source source="LOCAL" name="test@localhost" uuid="81dd7878-148a-4291-82f6-a39b1680acde">
++      <driver-ref>mysql.8</driver-ref>
++      <synchronize>true</synchronize>
++      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
++      <jdbc-url>jdbc:mysql://localhost:3306/test</jdbc-url>
++      <working-dir>$ProjectFileDir$</working-dir>
++    </data-source>
++  </component>
++</project>
+\ No newline at end of file
+Index: src/main/java/com/example/demo/HelloServlet.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/demo/HelloServlet.java b/src/main/java/com/example/demo/HelloServlet.java
+new file mode 100644
+--- /dev/null	(date 1609232269222)
++++ b/src/main/java/com/example/demo/HelloServlet.java	(date 1609232269222)
+@@ -0,0 +1,27 @@
++package com.example.demo;
++
++import java.io.*;
++import javax.servlet.http.*;
++import javax.servlet.annotation.*;
++
++@WebServlet(name = "helloServlet", value = "/hello-servlet")
++public class HelloServlet extends HttpServlet {
++    private String message;
++
++    public void init() {
++        message = "Hello World!";
++    }
++
++    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
++        response.setContentType("text/html");
++
++        // Hello
++        PrintWriter out = response.getWriter();
++        out.println("<html><body>");
++        out.println("<h1>" + message + "</h1>");
++        out.println("</body></html>");
++    }
++
++    public void destroy() {
++    }
++}
+\ No newline at end of file
+Index: src/main/webapp/WEB-INF/web.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/webapp/WEB-INF/web.xml b/src/main/webapp/WEB-INF/web.xml
+new file mode 100644
+--- /dev/null	(date 1609232269226)
++++ b/src/main/webapp/WEB-INF/web.xml	(date 1609232269226)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
++         version="4.0">
++</web-app>
+\ No newline at end of file
+Index: src/main/java/com/example/demo/util/BashDao.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/demo/util/BashDao.java b/src/main/java/com/example/demo/util/BashDao.java
+new file mode 100644
+--- /dev/null	(date 1609291129342)
++++ b/src/main/java/com/example/demo/util/BashDao.java	(date 1609291129342)
+@@ -0,0 +1,54 @@
++package com.example.demo.util;
++
++import java.sql.*;
++
++public class BashDao {//BashDao是放执行sql的语句
++    private Connection connection;
++    private PreparedStatement preparedStatement;
++
++    {
++        try {
++            Class.forName("com.mysql.cj.jdbc.Driver");
++            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","ljf","Wm$5788248$");
++        } catch (ClassNotFoundException e) {
++            e.printStackTrace();
++        } catch (SQLException throwables) {
++            throwables.printStackTrace();
++        }
++
++    }
++    public Connection getConnection(){
++        if (connection == null)
++        try {
++            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test",
++                    "ljf","Wm$5788248$");
++        } catch (SQLException throwables) {
++            throwables.printStackTrace();
++        }
++        return connection;
++    }
++    public ResultSet executeQuery(String sql,Object ... params){
++        connection = getConnection();
++        try {
++            preparedStatement = connection.prepareStatement(sql);
++            for (int i = 0; i < params.length; i++)
++                preparedStatement.setObject(i+1,params[i]);
++            return preparedStatement.executeQuery();
++        } catch (SQLException throwables) {
++            throwables.printStackTrace();
++        }
++        return null;
++    }
++    public int executeUpdate(String sql, Object ... params){//更新
++        connection = getConnection();
++        try {
++            preparedStatement = connection.prepareStatement(sql);
++            for (int i = 0; i < params.length; i++)
++                preparedStatement.setObject(i+1,params[i]);
++            return preparedStatement.executeUpdate();
++        } catch (SQLException throwables) {
++            throwables.printStackTrace();
++        }
++        return  -1;
++    }
++}
+Index: .idea/libraries/Maven__redis_clients_jedis_3_4_1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__redis_clients_jedis_3_4_1.xml b/.idea/libraries/Maven__redis_clients_jedis_3_4_1.xml
+new file mode 100644
+--- /dev/null	(date 1609761126865)
++++ b/.idea/libraries/Maven__redis_clients_jedis_3_4_1.xml	(date 1609761126865)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: redis.clients:jedis:3.4.1">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/3.4.1/jedis-3.4.1.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/3.4.1/jedis-3.4.1-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/3.4.1/jedis-3.4.1-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml b/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml
+new file mode 100644
+--- /dev/null	(date 1609761126861)
++++ b/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml	(date 1609761126861)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.slf4j:slf4j-api:1.7.30">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml b/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml
+new file mode 100644
+--- /dev/null	(date 1609761126857)
++++ b/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml	(date 1609761126857)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.apache.commons:commons-pool2:2.6.2">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.6.2/commons-pool2-2.6.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.6.2/commons-pool2-2.6.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.6.2/commons-pool2-2.6.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1609980665091)
++++ b/.idea/vcs.xml	(date 1609980665091)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1609232275708)
++++ b/.idea/.gitignore	(date 1609232275708)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
++# Editor-based HTTP Client requests
++/httpRequests/
+Index: src/main/webapp/game.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/webapp/game.jsp b/src/main/webapp/game.jsp
+new file mode 100644
+--- /dev/null	(date 1609299182047)
++++ b/src/main/webapp/game.jsp	(date 1609299182047)
+@@ -0,0 +1,22 @@
++<%--
++  Created by IntelliJ IDEA.
++  User: ljf
++  Date: 12/29/20
++  Time: 5:39 AM
++  To change this template use File | Settings | File Templates.
++--%>
++<%@ page contentType="text/html;charset=UTF-8" language="java" %>
++<html>
++<head>
++    <title>Title</title>
++</head>
++<body>
++<form action="save.do" method="post">
++    游戏名称<input name="gameName"/><br>
++    游戏类型<input name="gameType"/><br>
++    发行公司<input name="gameCompany"/><br>
++    发行年份<input name="gameYear"/><br>
++    <input type="submit" value="save">
++</form>
++</body>
++</html>
+Index: .idea/uiDesigner.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/uiDesigner.xml b/.idea/uiDesigner.xml
+new file mode 100644
+--- /dev/null	(date 1609243274705)
++++ b/.idea/uiDesigner.xml	(date 1609243274705)
+@@ -0,0 +1,124 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Palette2">
++    <group name="Swing">
++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
++      </item>
++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
++        <initial-values>
++          <property name="text" value="Button" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="RadioButton" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="CheckBox" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="Label" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
++          <preferred-size width="-1" height="20" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
++      </item>
++    </group>
++  </component>
++</project>
+\ No newline at end of file
+Index: src/main/java/com/example/demo/domain/Game.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/demo/domain/Game.java b/src/main/java/com/example/demo/domain/Game.java
+new file mode 100644
+--- /dev/null	(date 1609252666729)
++++ b/src/main/java/com/example/demo/domain/Game.java	(date 1609252666729)
+@@ -0,0 +1,71 @@
++package com.example.demo.domain;
++
++public class Game {
++    private Integer gameId;
++    private String gameName;
++    private String gameType;
++    private String gameCompany;
++    private Integer gameYear;
++
++    public Game() {
++    }
++
++    public Game(Integer gameId, String gameName, String gameType, String gameCompany, Integer gameYear) {
++        this.gameId = gameId;
++        this.gameName = gameName;
++        this.gameType = gameType;
++        this.gameCompany = gameCompany;
++        this.gameYear = gameYear;
++    }
++
++    public Integer getGameId() {
++        return gameId;
++    }
++
++    public void setGameId(Integer gameId) {
++        this.gameId = gameId;
++    }
++
++    public String getGameName() {
++        return gameName;
++    }
++
++    public void setGameName(String gameName) {
++        this.gameName = gameName;
++    }
++
++    public String getGameType() {
++        return gameType;
++    }
++
++    public void setGameType(String gameType) {
++        this.gameType = gameType;
++    }
++
++    public String getGameCompany() {
++        return gameCompany;
++    }
++
++    public void setGameCompany(String gameCompany) {
++        this.gameCompany = gameCompany;
++    }
++
++    public Integer getGameYear() {
++        return gameYear;
++    }
++
++    public void setGameYear(Integer gameYear) {
++        this.gameYear = gameYear;
++    }
++
++    @Override
++    public String toString() {
++        return "Game{" +
++                "gameId=" + gameId +
++                ", gameName='" + gameName + '\'' +
++                ", gameType='" + gameType + '\'' +
++                ", gameCompany='" + gameCompany + '\'' +
++                ", gameYear=" + gameYear +
++                '}';
++    }
++}
+Index: src/main/java/com/example/demo/dao/impl/GameDaoImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/demo/dao/impl/GameDaoImpl.java b/src/main/java/com/example/demo/dao/impl/GameDaoImpl.java
+new file mode 100644
+--- /dev/null	(date 1609295140494)
++++ b/src/main/java/com/example/demo/dao/impl/GameDaoImpl.java	(date 1609295140494)
+@@ -0,0 +1,62 @@
++package com.example.demo.dao.impl;
++
++import com.example.demo.dao.GameDao;
++import com.example.demo.domain.Game;
++import com.example.demo.util.BashDao;
++
++import java.sql.ResultSet;
++import java.sql.SQLException;
++import java.util.ArrayList;
++import java.util.List;
++
++public class GameDaoImpl extends BashDao implements GameDao {
++    @Override
++    public int saveGame(Game game) {
++      String sql = "insert into games(gameName,gameType,gameCompany,gameYear)values(?,?,?,?);";
++        return executeUpdate(sql, game.getGameName(), game.getGameType(),
++                game.getGameCompany(), game.getGameYear());
++    }
++
++    @Override
++    public List<Game> findAllGame(Game game) {
++       StringBuffer sql = new StringBuffer("select * from games where 1 = 1");
++        List<Object> params = new  ArrayList<>(); //储存输入查询的内容
++        if (game.getGameName() != null && !"".equals(game.getGameName())){
++            sql.append(" and gameName = ?");
++            params.add(game.getGameName());
++        }
++        if (game.getGameType() != null && !"".equals(game.getGameType())){
++            sql.append(" and gameType = ?");
++            params.add(game.getGameType());
++        }
++        if (game.getGameCompany() != null && !"".equals(game.getGameCompany())){
++            sql.append(" and gameCompany = ?");
++            params.add(game.getGameCompany());
++        }
++        if (game.getGameYear() >=1000&&game.getGameYear()<=9999){
++            sql.append("and gameYear = ?");
++            params.add(game.getGameYear());
++        }
++        ResultSet resultSet = executeQuery(sql.toString(),params.toArray());//获取sql和params的内容
++        List<Game> games = new ArrayList<>();
++        if (resultSet != null)
++               try {
++                   while (resultSet.next()) {
++                   games.add(new Game(
++                           resultSet.getInt(1),
++                           resultSet.getString(2),
++                           resultSet.getString(3),
++                           resultSet.getString(4),
++                           resultSet.getInt(5)
++
++                   ));
++               }
++           } catch (SQLException throwables) {
++                   throwables.printStackTrace();
++               }
++            return games;
++    }
++
++
++}
++
+Index: src/main/java/com/example/demo/servlet/FindAllGamesServlet.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/demo/servlet/FindAllGamesServlet.java b/src/main/java/com/example/demo/servlet/FindAllGamesServlet.java
+new file mode 100644
+--- /dev/null	(date 1609299182027)
++++ b/src/main/java/com/example/demo/servlet/FindAllGamesServlet.java	(date 1609299182027)
+@@ -0,0 +1,39 @@
++package com.example.demo.servlet;
++
++import com.example.demo.dao.GameDao;
++import com.example.demo.dao.impl.GameDaoImpl;
++import com.example.demo.domain.Game;
++
++import javax.servlet.ServletException;
++import javax.servlet.annotation.WebFilter;
++import javax.servlet.annotation.WebServlet;
++import javax.servlet.http.HttpServlet;
++import javax.servlet.http.HttpServletRequest;
++import javax.servlet.http.HttpServletResponse;
++import java.io.IOException;
++import java.util.List;
++
++@WebServlet("/find.do")
++public class FindAllGamesServlet extends HttpServlet {//查询所有的游戏
++    private final GameDao gameDao = new GameDaoImpl();
++
++
++    @Override
++    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
++        Game game = new Game();
++        game.setGameName(req.getParameter("gameName"));
++        game.setGameType(req.getParameter("gameType"));
++        game.setGameCompany(req.getParameter("gameCompany"));
++        try{
++            game.setGameYear(Integer.parseInt(req.getParameter("gameYear")));
++        } catch (NumberFormatException e) {
++            game.setGameYear(-1);
++        }
++        List<Game> games = gameDao.findAllGame(game);
++
++        req.setAttribute("games", games);
++        req.getRequestDispatcher("games.jsp").forward(req, resp);
++    }
++
++    }
++
+Index: src/main/java/com/example/demo/servlet/SaveGamServlet.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/demo/servlet/SaveGamServlet.java b/src/main/java/com/example/demo/servlet/SaveGamServlet.java
+new file mode 100644
+--- /dev/null	(date 1609299182047)
++++ b/src/main/java/com/example/demo/servlet/SaveGamServlet.java	(date 1609299182047)
+@@ -0,0 +1,28 @@
++package com.example.demo.servlet;
++
++import com.example.demo.dao.GameDao;
++import com.example.demo.dao.impl.GameDaoImpl;
++import com.example.demo.domain.Game;
++
++import javax.servlet.ServletException;
++import javax.servlet.annotation.WebServlet;
++import javax.servlet.http.HttpServlet;
++import javax.servlet.http.HttpServletRequest;
++import javax.servlet.http.HttpServletResponse;
++import java.io.IOException;
++
++@WebServlet("/save.do")
++public class SaveGamServlet extends HttpServlet { //保存游戏
++    private final GameDao gameDao = new GameDaoImpl();
++
++    @Override
++    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
++        Game game = new Game();
++        game.setGameName(req.getParameter("gameName"));
++        game.setGameType(req.getParameter("gameType"));
++        game.setGameCompany(req.getParameter("gameCompany"));
++        game.setGameYear(Integer.valueOf(req.getParameter("gameYear")));
++        gameDao.saveGame(game);
++        resp.sendRedirect("index.jsp");
++    }
++}
+Index: src/main/webapp/games.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/webapp/games.jsp b/src/main/webapp/games.jsp
+new file mode 100644
+--- /dev/null	(date 1609293393547)
++++ b/src/main/webapp/games.jsp	(date 1609293393547)
+@@ -0,0 +1,28 @@
++<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
++<%--
++  Created by IntelliJ IDEA.
++  User: ljf
++  Date: 12/29/20
++  Time: 9:23 AM
++  To change this template use File | Settings | File Templates.
++--%>
++<%@ page contentType="text/html;charset=UTF-8" language="java" %>
++<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
++<html>
++<head>
++    <title>Title</title>
++</head>
++<body>
++<table border="1">
++    <C:forEach var="game" items="${games}">
++        <tr>
++            <td>${game.gameId}</td>
++            <td>${game.gameName}</td>
++            <td>${game.gameType}</td>
++            <td>${game.gameCompany}</td>
++            <td>${game.gameYear}</td>
++        </tr>
++    </C:forEach>
++</table>
++</body>
++</html>
+Index: src/main/java/com/example/demo/dao/GameDao.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/demo/dao/GameDao.java b/src/main/java/com/example/demo/dao/GameDao.java
+new file mode 100644
+--- /dev/null	(date 1609292577927)
++++ b/src/main/java/com/example/demo/dao/GameDao.java	(date 1609292577927)
+@@ -0,0 +1,15 @@
++package com.example.demo.dao;
++
++import com.example.demo.domain.Game;
++
++import java.util.List;
++
++public interface GameDao {
++    //接口中的方法是依据客户的需求写的（表格内容）
++    int saveGame(Game game); //保存游戏
++    List<Game> findAllGame(Game game); //查询所有的游戏
++}
++
++
++
++
+Index: target/demo-1/index.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/demo-1/index.jsp b/target/demo-1/index.jsp
+new file mode 100644
+--- /dev/null	(date 1609299185838)
++++ b/target/demo-1/index.jsp	(date 1609299185838)
+@@ -0,0 +1,17 @@
++<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
++<!DOCTYPE html>
++<html>
++<head>
++    <title>游戏查询</title>
++</head>
++<body>
++<form action="find.do" method="post">
++    游戏名称<input name="gameName"/><br>
++    游戏类型<input name="gameType"/><br>
++    发行公司<input name="gameCompany"/><br>
++    发行年份<input name="gameYear"/><br>
++     <input type="submit" value="Find"/>
++    <a href="game.jsp">添加</a>
++</form>
++</body>
++</html>
+\ No newline at end of file
+Index: target/demo-1/game.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/demo-1/game.jsp b/target/demo-1/game.jsp
+new file mode 100644
+--- /dev/null	(date 1609299185838)
++++ b/target/demo-1/game.jsp	(date 1609299185838)
+@@ -0,0 +1,22 @@
++<%--
++  Created by IntelliJ IDEA.
++  User: ljf
++  Date: 12/29/20
++  Time: 5:39 AM
++  To change this template use File | Settings | File Templates.
++--%>
++<%@ page contentType="text/html;charset=UTF-8" language="java" %>
++<html>
++<head>
++    <title>Title</title>
++</head>
++<body>
++<form action="save.do" method="post">
++    游戏名称<input name="gameName"/><br>
++    游戏类型<input name="gameType"/><br>
++    发行公司<input name="gameCompany"/><br>
++    发行年份<input name="gameYear"/><br>
++    <input type="submit" value="save">
++</form>
++</body>
++</html>
+Index: target/demo-1/games.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/demo-1/games.jsp b/target/demo-1/games.jsp
+new file mode 100644
+--- /dev/null	(date 1609293396230)
++++ b/target/demo-1/games.jsp	(date 1609293396230)
+@@ -0,0 +1,28 @@
++<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
++<%--
++  Created by IntelliJ IDEA.
++  User: ljf
++  Date: 12/29/20
++  Time: 9:23 AM
++  To change this template use File | Settings | File Templates.
++--%>
++<%@ page contentType="text/html;charset=UTF-8" language="java" %>
++<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
++<html>
++<head>
++    <title>Title</title>
++</head>
++<body>
++<table border="1">
++    <C:forEach var="game" items="${games}">
++        <tr>
++            <td>${game.gameId}</td>
++            <td>${game.gameName}</td>
++            <td>${game.gameType}</td>
++            <td>${game.gameCompany}</td>
++            <td>${game.gameYear}</td>
++        </tr>
++    </C:forEach>
++</table>
++</body>
++</html>
+Index: target/demo-1/WEB-INF/web.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/demo-1/WEB-INF/web.xml b/target/demo-1/WEB-INF/web.xml
+new file mode 100644
+--- /dev/null	(date 1609257654704)
++++ b/target/demo-1/WEB-INF/web.xml	(date 1609257654704)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
++         version="4.0">
++</web-app>
+\ No newline at end of file
+Index: target/demo-1/META-INF/MANIFEST.MF
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/demo-1/META-INF/MANIFEST.MF b/target/demo-1/META-INF/MANIFEST.MF
+new file mode 100644
+--- /dev/null	(date 1609300805290)
++++ b/target/demo-1/META-INF/MANIFEST.MF	(date 1609300805290)
+@@ -0,0 +1,5 @@
++Manifest-Version: 1.0
++Created-By: IntelliJ IDEA
++Built-By: ljf
++Build-Jdk: version 11.0.8
++
+Index: .idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml b/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml
+new file mode 100644
+--- /dev/null	(date 1609232828851)
++++ b/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml	(date 1609232828851)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: javax.servlet:javax.servlet-api:4.0.1">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml b/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml
+new file mode 100644
+--- /dev/null	(date 1609232828855)
++++ b/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml	(date 1609232828855)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.apiguardian:apiguardian-api:1.1.0">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml b/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml
+new file mode 100644
+--- /dev/null	(date 1609233785740)
++++ b/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml	(date 1609233785740)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: com.google.protobuf:protobuf-java:3.11.4">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: src/main/java/com/example/demo/filter/CharacterEncodingFilter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/demo/filter/CharacterEncodingFilter.java b/src/main/java/com/example/demo/filter/CharacterEncodingFilter.java
+new file mode 100644
+--- /dev/null	(date 1609676463304)
++++ b/src/main/java/com/example/demo/filter/CharacterEncodingFilter.java	(date 1609676463304)
+@@ -0,0 +1,26 @@
++package com.example.demo.filter;
++
++import javax.servlet.*;
++import javax.servlet.annotation.WebFilter;
++import java.io.IOException;
++@WebFilter("*.do")
++public class CharacterEncodingFilter implements  Filter{
++    @Override
++    public void init(FilterConfig filterConfig) throws ServletException {
++        //init在上下文被加载的过程中启动一次
++        System.out.println("init..................");
++    }
++
++    @Override
++    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)
++            throws IOException, ServletException {
++        servletRequest.setCharacterEncoding("UTF-8");
++        servletResponse.setCharacterEncoding("UTF-8");
++          filterChain.doFilter(servletRequest,servletResponse);
++    }
++
++    @Override
++    public void destroy() {
++        System.out.println("destroy...............");
++    }
++}
